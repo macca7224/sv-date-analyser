@@ -1,6 +1,7 @@
 import argparse
 import csv
 import json
+import os
 import multiprocessing
 
 from tqdm import tqdm
@@ -35,7 +36,7 @@ def bulk_parse(locs):
 def main(locs):
     results = bulk_parse(locs)
 
-    name = args.json_file.split('/')[-1].split('.')[0]
+    name = os.path.basename(args.json_file).split('.')[0]
     output_path = f'csv/{name}.csv'
     with open(output_path, 'w') as csv_f:
         csv_writer = csv.writer(csv_f)

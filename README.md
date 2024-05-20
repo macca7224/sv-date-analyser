@@ -6,6 +6,8 @@ Street View locations.
 Uses the technique found by [Emily](https://github.com/itisem) to determine the
 exact timestamp for locations.
 
+![image](https://github.com/macca7224/sv-date-analyser/assets/138291010/507b069d-be15-416d-987b-46c90a0d9308)
+
 ## Setup
 1. `git clone https://github.com/macca7224/sv-date-analyser`
 2. `pip install -r requirements.txt`
@@ -27,8 +29,11 @@ exact timestamp for locations.
  (it should also open in your browser automatically)
  - Hover over the button in the top right to toggle which segments are visible.
  Doing one at a time generally works well
+ - Note: you'll likely get bad results if multiple cars were driving simultaneously
 
 ## Example usage
 `python parse_map.py maps/birdsville.json`
 
 `python get_path.py csv/birdsville.csv`
+
+

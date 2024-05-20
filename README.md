@@ -1,6 +1,6 @@
 # SV Date Analyser
 
-Tool to analyse dates and determine the path taken by driver from Google
+Tool to analyse dates and determine the path taken by a driver from Google
 Street View locations.
 
 Uses the technique found by [Emily](https://github.com/itisem) to determine the

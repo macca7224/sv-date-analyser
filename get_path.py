@@ -1,5 +1,6 @@
 import argparse
 import math
+import os
 import webbrowser
 
 import folium
@@ -89,7 +90,7 @@ def main(file_path, segment_gap):
     folium.LayerControl().add_to(m)
 
     # Save the map to an HTML file
-    file_name = file_path.split('/')[-1].split('.')[0]
+    file_name = os.path.basename(args.csv_file).split('.')[0]
     output_file = f'{file_name}_path.html'
     m.save(output_file)
     print(f'Saved to {output_file}')

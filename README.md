@@ -10,7 +10,8 @@ exact timestamp for locations.
 
 ## Setup
 1. `git clone https://github.com/macca7224/sv-date-analyser`
-2. `pip install -r requirements.txt`
+2. `cd sv-date-analyser`
+3. `pip install -r requirements.txt`
 
 ## Getting dates from a generated map
  - Generate a map using https://map-generator-nsj.vercel.app/ **(ensure check all dates is turned off)**
